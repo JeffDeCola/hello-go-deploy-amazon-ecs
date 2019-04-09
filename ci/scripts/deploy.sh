@@ -1,5 +1,5 @@
 #!/bin/sh
-# hello-go-deploy-ecs deploy.sh
+# hello-go-deploy-amazon-ecs deploy.sh
 
 echo " "
 
@@ -18,7 +18,7 @@ else
 fi
 
 echo "At start, you should be in a /tmp/build/xxxxx directory with one folder:"
-echo "   /hello-go-deploy-ecs"
+echo "   /hello-go-deploy-amazon-ecs"
 echo " "
 
 echo "This is a placeholder"

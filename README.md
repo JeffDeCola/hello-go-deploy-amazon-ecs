@@ -1,16 +1,16 @@
-# hello-go-deploy-ecs
+# hello-go-deploy-amazon-ecs
 
 ```text
 *** THE DEPLOY IS UNDER CONSTRUCTION - CHECK BACK SOON ***
 ```
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/JeffDeCola/hello-go-deploy-ecs)](https://goreportcard.com/report/github.com/JeffDeCola/hello-go-deploy-ecs)
-[![GoDoc](https://godoc.org/github.com/JeffDeCola/hello-go-deploy-ecs?status.svg)](https://godoc.org/github.com/JeffDeCola/hello-go-deploy-ecs)
-[![Maintainability](https://api.codeclimate.com/v1/badges/ce328e08ef7038607b16/maintainability)](https://codeclimate.com/github/JeffDeCola/hello-go-deploy-ecs/maintainability)
-[![Issue Count](https://codeclimate.com/github/JeffDeCola/hello-go-deploy-ecs/badges/issue_count.svg)](https://codeclimate.com/github/JeffDeCola/hello-go-deploy-ecs/issues)
+[![Go Report Card](https://goreportcard.com/badge/github.com/JeffDeCola/hello-go-deploy-amazon-ecs)](https://goreportcard.com/report/github.com/JeffDeCola/hello-go-deploy-amazon-ecs)
+[![GoDoc](https://godoc.org/github.com/JeffDeCola/hello-go-deploy-amazon-ecs?status.svg)](https://godoc.org/github.com/JeffDeCola/hello-go-deploy-amazon-ecs)
+[![Maintainability](https://api.codeclimate.com/v1/badges/590031ce916f257f599f/maintainability)](https://codeclimate.com/github/JeffDeCola/hello-go-deploy-amazon-ecs/maintainability)
+[![Issue Count](https://codeclimate.com/github/JeffDeCola/hello-go-deploy-amazon-ecs/badges/issue_count.svg)](https://codeclimate.com/github/JeffDeCola/hello-go-deploy-amazon-ecs/issues)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://jeffdecola.mit-license.org)
 
-`hello-go-deploy-ecs` _will test, build, push (to DockerHub) and deploy
+`hello-go-deploy-amazon-ecs` _will test, build, push (to DockerHub) and deploy
 a long running "hello-world" Docker Image to Amazon Elastic Container Service (ecs)._
 
 I also have other repos showing different deployments,
@@ -25,16 +25,16 @@ I also have other repos showing different deployments,
   * [hello-go-deploy-aks](https://github.com/JeffDeCola/hello-go-deploy-aks)
   * [hello-go-deploy-gke](https://github.com/JeffDeCola/hello-go-deploy-gke)
 * IaaS
-  * [hello-go-deploy-ecs](https://github.com/JeffDeCola/hello-go-deploy-ecs)
+  * [hello-go-deploy-amazon-ecs](https://github.com/JeffDeCola/hello-go-deploy-amazon-ecs)
   * [hello-go-deploy-azure-vm](https://github.com/JeffDeCola/hello-go-deploy-azure-vm)
   * [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce)
 
-The `hello-go-deploy-ecs`
-[Docker Image](https://hub.docker.com/r/jeffdecola/hello-go-deploy-ecs)
+The `hello-go-deploy-amazon-ecs`
+[Docker Image](https://hub.docker.com/r/jeffdecola/hello-go-deploy-amazon-ecs)
 on DockerHub.
 
-The `hello-go-deploy-ecs`
-[GitHub Webpage](https://jeffdecola.github.io/hello-go-deploy-ecs/).
+The `hello-go-deploy-amazon-ecs`
+[GitHub Webpage](https://jeffdecola.github.io/hello-go-deploy-amazon-ecs/).
 
 ## PREREQUISITES
 
@@ -71,7 +71,7 @@ To run from the command line,
 go run main.go
 ```
 
-Every 2 seconds `hello-go-deploy-ecs` will print:
+Every 2 seconds `hello-go-deploy-amazon-ecs` will print:
 
 ```bash
 Hello everyone, count is: 1
@@ -115,7 +115,7 @@ Build your docker image from binary `hello-go`
 using `Dockerfile`,
 
 ```bash
-docker build -t jeffdecola/hello-go-deploy-ecs .
+docker build -t jeffdecola/hello-go-deploy-amazon-ecs .
 ```
 
 Obviously, replace `jeffdecola` with your DockerHub username.
@@ -126,12 +126,12 @@ Check your docker images on your machine,
 docker images
 ```
 
-It will be listed as `jeffdecola/hello-go-deploy-ecs`
+It will be listed as `jeffdecola/hello-go-deploy-amazon-ecs`
 
 You can test your dockerhub image,
 
 ```bash
-docker run jeffdecola/hello-go-deploy-ecs
+docker run jeffdecola/hello-go-deploy-amazon-ecs
 ```
 
 There is a `build-push.sh` script to build and push to DockerHub.
@@ -151,11 +151,11 @@ docker login
 Once logged in you can push to DockerHub
 
 ```bash
-docker push jeffdecola/hello-go-deploy-ecs
+docker push jeffdecola/hello-go-deploy-amazon-ecs
 ```
 
 Check you image at DockerHub. My image is located
-[https://hub.docker.com/r/jeffdecola/hello-go-deploy-ecs](https://hub.docker.com/r/jeffdecola/hello-go-deploy-ecs).
+[https://hub.docker.com/r/jeffdecola/hello-go-deploy-amazon-ecs](https://hub.docker.com/r/jeffdecola/hello-go-deploy-amazon-ecs).
 
 There is a `build-push.sh` script to build and push to DockerHub.
 There is also a script in the /ci folder to build and push
@@ -169,25 +169,25 @@ tbd
 
 For fun, I use concourse to automate the above steps.
 
-A pipeline file [pipeline.yml](https://github.com/JeffDeCola/hello-go-deploy-ecs/tree/master/ci/pipeline.yml)
+A pipeline file [pipeline.yml](https://github.com/JeffDeCola/hello-go-deploy-amazon-ecs/tree/master/ci/pipeline.yml)
 shows the entire ci flow. Visually, it looks like,
 
-![IMAGE - hello-go-deploy-ecs concourse ci pipeline - IMAGE](docs/pics/hello-go-deploy-ecs-pipeline.jpg)
+![IMAGE - hello-go-deploy-amazon-ecs concourse ci pipeline - IMAGE](docs/pics/hello-go-deploy-amazon-ecs-pipeline.jpg)
 
 The `jobs` and `tasks` are,
 
 * `job-readme-github-pages` runs task
-  [readme-github-pages.sh](https://github.com/JeffDeCola/hello-go-deploy-ecs/tree/master/ci/scripts/readme-github-pages.sh).
+  [readme-github-pages.sh](https://github.com/JeffDeCola/hello-go-deploy-amazon-ecs/tree/master/ci/scripts/readme-github-pages.sh).
 * `job-unit-tests` runs task
-  [unit-tests.sh](https://github.com/JeffDeCola/hello-go-deploy-ecs/tree/master/ci/scripts/unit-tests.sh).
+  [unit-tests.sh](https://github.com/JeffDeCola/hello-go-deploy-amazon-ecs/tree/master/ci/scripts/unit-tests.sh).
 * `job-build-push` runs task
-  [build-push.sh](https://github.com/JeffDeCola/hello-go-deploy-ecs/tree/master/ci/scripts/build-push.sh).
+  [build-push.sh](https://github.com/JeffDeCola/hello-go-deploy-amazon-ecs/tree/master/ci/scripts/build-push.sh).
 * `job-deploy` runs task
-  [deploy.sh](https://github.com/JeffDeCola/hello-go-deploy-ecs/tree/master/ci/scripts/deploy.sh).
+  [deploy.sh](https://github.com/JeffDeCola/hello-go-deploy-amazon-ecs/tree/master/ci/scripts/deploy.sh).
 
 The concourse `resources type` are,
 
-* `hello-go-deploy-ecs` uses a resource type
+* `hello-go-deploy-amazon-ecs` uses a resource type
   [docker-image](https://hub.docker.com/r/concourse/git-resource/)
   to PULL a repo from github.
 * `resource-dump-to-dockerhub` uses a resource type

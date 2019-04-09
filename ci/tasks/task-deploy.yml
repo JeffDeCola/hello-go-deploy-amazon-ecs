@@ -1,4 +1,4 @@
-# hello-go-deploy-ecs task-deploy.yml
+# hello-go-deploy-amazon-ecs task-deploy.yml
 
 platform: linux
 
@@ -9,9 +9,9 @@ image_resource:
     tag: 1.11
 
 inputs:
-- name: hello-go-deploy-ecs
+- name: hello-go-deploy-amazon-ecs
 
 run:
-  path: ./hello-go-deploy-ecs/ci/scripts/deploy.sh
+  path: ./hello-go-deploy-amazon-ecs/ci/scripts/deploy.sh
   # args: [-debug]
 

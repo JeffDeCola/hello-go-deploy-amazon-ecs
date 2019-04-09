@@ -1,4 +1,4 @@
-# hello-go-deploy-ecs task-readme-github-pages.yml
+# hello-go-deploy-amazon-ecs task-readme-github-pages.yml
 
 platform: linux
 
@@ -9,12 +9,12 @@ image_resource:
     tag: 1.11
 
 inputs:
-- name: hello-go-deploy-ecs
+- name: hello-go-deploy-amazon-ecs
 
 outputs:
-- name: hello-go-deploy-ecs-updated
+- name: hello-go-deploy-amazon-ecs-updated
 
 run:
-  path: ./hello-go-deploy-ecs/ci/scripts/readme-github-pages.sh
+  path: ./hello-go-deploy-amazon-ecs/ci/scripts/readme-github-pages.sh
   # args: [-debug]
 
