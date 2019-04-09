@@ -1,4 +1,4 @@
 #!/bin/bash
-# hello-go-deploy-ecs set-pipeline.sh
+# hello-go-deploy-amazon-ecs set-pipeline.sh
 
-fly -t ci set-pipeline -p hello-go-deploy-ecs -c pipeline.yml --load-vars-from ../../../../../.credentials.yml
+fly -t ci set-pipeline -p hello-go-deploy-amazon-ecs -c pipeline.yml --load-vars-from ../../../../../.credentials.yml

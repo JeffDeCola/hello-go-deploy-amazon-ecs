@@ -1,5 +1,5 @@
 #!/bin/sh -e
-# hello-go-deploy-ecs run.sh
+# hello-go-deploy-amazon-ecs run.sh
 
 echo " "
 

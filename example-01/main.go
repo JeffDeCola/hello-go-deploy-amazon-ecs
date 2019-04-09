@@ -1,4 +1,4 @@
-// hello-go-deploy-ecs main.go
+// hello-go-deploy-amazon-ecs main.go
 
 package main
 

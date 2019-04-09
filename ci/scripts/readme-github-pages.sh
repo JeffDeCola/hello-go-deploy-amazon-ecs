@@ -1,5 +1,5 @@
 #!/bin/sh
-# hello-go-deploy-ecs readme-github-pages.sh
+# hello-go-deploy-amazon-ecs readme-github-pages.sh
 
 echo " "
 
@@ -17,14 +17,14 @@ else
     echo " "
 fi
 
-echo "The goal is to git clone /hello-go-deploy-ecs to /hello-go-deploy-ecs-updated"
+echo "The goal is to git clone /hello-go-deploy-amazon-ecs to /hello-go-deploy-amazon-ecs-updated"
 echo "Then script will edit the /docs/_includes/README.md for GITHUB WEBPAGES"
 echo "Finally push the changes in /docs/_includes/README.md to github"
 echo " "
 
 echo "At start, you should be in a /tmp/build/xxxxx directory with two folders:"
-echo "   /hello-go-deploy-ecs"
-echo "   /hello-go-deploy-ecs-updated (created in task-build-push.yml task file)"
+echo "   /hello-go-deploy-amazon-ecs"
+echo "   /hello-go-deploy-amazon-ecs-updated (created in task-build-push.yml task file)"
 echo " "
 
 echo "pwd is: $PWD"
@@ -34,12 +34,12 @@ echo "List whats in the current directory"
 ls -la
 echo " "
 
-echo "git clone hello-go-deploy-ecs to hello-go-deploy-ecs-updated"
-git clone hello-go-deploy-ecs hello-go-deploy-ecs-updated
+echo "git clone hello-go-deploy-amazon-ecs to hello-go-deploy-amazon-ecs-updated"
+git clone hello-go-deploy-amazon-ecs hello-go-deploy-amazon-ecs-updated
 echo " "
 
-echo "cd hello-go-deploy-ecs-updated"
-cd hello-go-deploy-ecs-updated
+echo "cd hello-go-deploy-amazon-ecs-updated"
+cd hello-go-deploy-amazon-ecs-updated
 echo " "
 
 echo "List whats in the current directory"
