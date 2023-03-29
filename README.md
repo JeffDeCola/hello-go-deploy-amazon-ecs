@@ -1,19 +1,22 @@
-# hello-go-deploy-amazon-ecs
+# HELLO GO DEPLOY AMAZON ECS
+
+[![Tag Latest](https://img.shields.io/github/v/tag/jeffdecola/hello-go-deploy-amazon-ecs)](https://github.com/JeffDeCola/hello-go-deploy-amazon-ecs/tags)
+[![Go Reference](https://pkg.go.dev/badge/github.com/JeffDeCola/hello-go-deploy-amazon-ecs.svg)](https://pkg.go.dev/github.com/JeffDeCola/hello-go-deploy-amazon-ecs)
+[![Go Report Card](https://goreportcard.com/badge/github.com/JeffDeCola/hello-go-deploy-amazon-ecs)](https://goreportcard.com/report/github.com/JeffDeCola/hello-go-deploy-amazon-ecs)
+[![codeclimate Maintainability](https://api.codeclimate.com/v1/badges/590031ce916f257f599f/maintainability)](https://codeclimate.com/github/JeffDeCola/hello-go-deploy-amazon-ecs/maintainability)
+[![codeclimate Issue Count](https://codeclimate.com/github/JeffDeCola/hello-go-deploy-amazon-ecs/badges/issue_count.svg)](https://codeclimate.com/github/JeffDeCola/hello-go-deploy-amazon-ecs/issues)
+[![Docker Pulls](https://badgen.net/docker/pulls/jeffdecola/hello-go-deploy-amazon-ecs?icon=docker&label=pulls)](https://hub.docker.com/r/jeffdecola/hello-go-deploy-amazon-ecs/)
+[![MIT License](http://img.shields.io/:license-mit-blue.svg)](http://jeffdecola.mit-license.org)
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
 
 ```text
 *** THE DEPLOY IS UNDER CONSTRUCTION - CHECK BACK SOON ***
 ```
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/JeffDeCola/hello-go-deploy-amazon-ecs)](https://goreportcard.com/report/github.com/JeffDeCola/hello-go-deploy-amazon-ecs)
-[![GoDoc](https://godoc.org/github.com/JeffDeCola/hello-go-deploy-amazon-ecs?status.svg)](https://godoc.org/github.com/JeffDeCola/hello-go-deploy-amazon-ecs)
-[![Maintainability](https://api.codeclimate.com/v1/badges/590031ce916f257f599f/maintainability)](https://codeclimate.com/github/JeffDeCola/hello-go-deploy-amazon-ecs/maintainability)
-[![Issue Count](https://codeclimate.com/github/JeffDeCola/hello-go-deploy-amazon-ecs/badges/issue_count.svg)](https://codeclimate.com/github/JeffDeCola/hello-go-deploy-amazon-ecs/issues)
-[![License](http://img.shields.io/:license-mit-blue.svg)](http://jeffdecola.mit-license.org)
+_Deploy a "hello-world" docker image to
+Amazon Elastic Container Service (ecs)._
 
-`hello-go-deploy-amazon-ecs` _will test, build, push (to DockerHub) and deploy
-a long running "hello-world" Docker Image to Amazon Elastic Container Service (ecs)._
-
-I also have other repos showing different deployments,
+Other Services
 
 * PaaS
   * [hello-go-deploy-aws-elastic-beanstalk](https://github.com/JeffDeCola/hello-go-deploy-aws-elastic-beanstalk)
@@ -31,12 +34,19 @@ I also have other repos showing different deployments,
   * [hello-go-deploy-azure-vm](https://github.com/JeffDeCola/hello-go-deploy-azure-vm)
   * [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce)
 
-The `hello-go-deploy-amazon-ecs`
-[Docker Image](https://hub.docker.com/r/jeffdecola/hello-go-deploy-amazon-ecs)
-on DockerHub.
+Table of Contents
 
-The `hello-go-deploy-amazon-ecs`
-[GitHub Webpage](https://jeffdecola.github.io/hello-go-deploy-amazon-ecs/).
+* ???
+
+Documentation and Reference
+
+* The
+  [hello-go-deploy-amazon-ecs docker image](https://hub.docker.com/r/jeffdecola/hello-go-deploy-amazon-ecs)
+  on DockerHub
+* This repos
+  [github webpage](https://jeffdecola.github.io/hello-go-deploy-amazon-ecs/)
+  _built with
+  [concourse](https://github.com/JeffDeCola/hello-go-deploy-amazon-ecs/blob/master/ci-README.md)_
 
 ## PREREQUISITES
 
