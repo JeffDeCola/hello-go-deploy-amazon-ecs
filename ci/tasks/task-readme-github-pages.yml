@@ -2,19 +2,19 @@
 
 platform: linux
 
+# DOCKER BASE IMAGE FOR TASKS (BASED ON ALPINE, A SMALLER LINUX DISTRIBUTION)
 image_resource:
   type: docker-image
   source:
     repository: golang
-    tag: 1.11
+    tag: 1.20.1
 
 inputs:
-- name: hello-go-deploy-amazon-ecs
+  - name: hello-go-deploy-amazon-ecs
 
 outputs:
-- name: hello-go-deploy-amazon-ecs-updated
+  - name: hello-go-deploy-amazon-ecs-updated
 
 run:
   path: ./hello-go-deploy-amazon-ecs/ci/scripts/readme-github-pages.sh
   # args: [-debug]
-
