@@ -1,13 +1,11 @@
 # HELLO GO DEPLOY AMAZON ECS
 
 [![Tag Latest](https://img.shields.io/github/v/tag/jeffdecola/hello-go-deploy-amazon-ecs)](https://github.com/JeffDeCola/hello-go-deploy-amazon-ecs/tags)
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 [![Go Reference](https://pkg.go.dev/badge/github.com/JeffDeCola/hello-go-deploy-amazon-ecs.svg)](https://pkg.go.dev/github.com/JeffDeCola/hello-go-deploy-amazon-ecs)
 [![Go Report Card](https://goreportcard.com/badge/github.com/JeffDeCola/hello-go-deploy-amazon-ecs)](https://goreportcard.com/report/github.com/JeffDeCola/hello-go-deploy-amazon-ecs)
-[![codeclimate Maintainability](https://api.codeclimate.com/v1/badges/590031ce916f257f599f/maintainability)](https://codeclimate.com/github/JeffDeCola/hello-go-deploy-amazon-ecs/maintainability)
-[![codeclimate Issue Count](https://codeclimate.com/github/JeffDeCola/hello-go-deploy-amazon-ecs/badges/issue_count.svg)](https://codeclimate.com/github/JeffDeCola/hello-go-deploy-amazon-ecs/issues)
 [![Docker Pulls](https://badgen.net/docker/pulls/jeffdecola/hello-go-deploy-amazon-ecs?icon=docker&label=pulls)](https://hub.docker.com/r/jeffdecola/hello-go-deploy-amazon-ecs/)
-[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
-[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
 
 ```text
 *** THE DEPLOY IS UNDER CONSTRUCTION - CHECK BACK SOON ***
